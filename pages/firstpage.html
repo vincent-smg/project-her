@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First page!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../useables.js">
+</head>
+<body>
+    
+    <p class="topic">In this page ill show you my gratitude message to you!</p>
+
+    <img src="../assets/rose.png"  id="rose" >
+
+    <p onclick="toggletext()" class="clickable" id="letteropen"> click me to see the message</p>
+    <p id="hiddentext" style="display: none;" class="letter">My baby, I LOVE YOU SO MUCH!. i wish you
+      all the best in YOUR life. thank you for being by my side (digitally for now)
+      and for being the best girlfriend in the world. I hope we will be together forever and one day ill be 
+      able to to hug you and kiss you. I promise on skibidi that we will once meet eachother in person
+      and will be able to do stuff together than we normally cant do right now. i wanna be by your side
+      through harsh times and even through humourous times. i wanna be the one for you and you to be 
+      one for me. I hope you will be the chocolate to my milkshake. now you shall continue through the next page!
+      <a href="../pages/secondpage.html" class="letterbutton">click this to continue</a>
+    </p>
+
+
+    <script>
+      function toggletext() {
+        const hidden = document.getElementById('hiddentext');
+        if (!hidden) return;
+        hidden.style.display = hidden.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+
+</body>
+</html>

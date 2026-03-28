@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love letter!</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <p class="topic4"> On this page i made a love letter for you My love!</p>
+    
+
+<button onclick="addLove()" class="button4">Click me 💕</button>
+
+
+<div class="heartletter">
+<ul id="loveList"></ul>
+
+    <script>
+  const messages = [
+    "You always make me smile",
+    "You understand me",
+    "You’re the cutest person ever",
+    "You make everything better",
+    "I feel lucky to have you",
+    "You’re my favorite person",
+    "You’re my BABY BOO",
+    "Youre my wifey",
+    "I always check the time so i can have time with you!",
+    "I love the way you match my freak CUZ IM DOWN FOR YOU",
+    "I have things planned out(not like im expecting great future... OR ANYTHING! hmph!)",
+    "For now this is ALL i can offer maybe... but when ill see you in person ill MAKE SURE to spoil you",
+
+
+
+
+
+
+
+
+
+  ];
+
+  let index = 0;
+
+  function addLove() {
+    if (index < messages.length) {
+      const li = document.createElement("li");
+      li.textContent = messages[index];
+
+      document.getElementById("loveList").appendChild(li);
+
+      // trigger animation
+      setTimeout(() => {
+        li.classList.add("show");
+      }, 10);
+
+      index++;
+    } else {
+      alert("That’s all... but I could keep going forever ❤️");
+    }
+  }
+</script>
+</div>
+
+
+
+<a href="../pages/pagefour.html" class="link1">click this to continue</a>
+     
+
+
+
+<p class="spacing3">.</p>
+
+
+
+
+    
+</body>
+</html>

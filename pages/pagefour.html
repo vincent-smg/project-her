@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="../css/styles.css">
+    <title>Page four!</title>
+</head>
+<body>
+    
+
+<p class="topic5">Depending on percentage what would you rate this gift my baby?</p>
+
+
+
+
+
+<div class="bar2">
+    <div id="bar3">
+<div id="bar-container">
+  <div id="bar"></div>
+</div>
+
+<div id="text">0%</div>
+
+<script>
+  let progress = 0;
+
+  function increaseBar() {
+    if (progress < 100) {
+      progress += 1;
+      document.getElementById("bar").style.width = progress + "%";
+      document.getElementById("text").innerText = progress + "%";
+    }
+  }
+
+  function decreaseBar() {
+    if (progress > 0) {
+      progress -= 1;
+      updateBar();
+    }
+  }
+
+  function updateBar() {
+    document.getElementById("bar").style.width = progress + "%";
+    document.getElementById("text").innerText = progress + "%";
+  }
+  
+</script>
+
+<button onclick="increaseBar()" class="buttonfill">Fill +1%</button>
+<button onclick="decreaseBar()" class="buttondecrease">Decrease -1%</button>
+</div>
+
+
+<p class="spaceend">.</p>
+
+<a href="pagelast.html" class="buttonforend">click this to go to last page</a>
+
+
+
+
+</body>
+</html>
